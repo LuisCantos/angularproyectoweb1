@@ -1,0 +1,35 @@
+<app-header>
+  <nav>
+    <label for="username">Usuario:</label>
+    <input type="text" id="username" [(ngModel)]="username" required />
+    <label for="password">Clave:</label>
+    <input type="password" id="password" [(ngModel)]="password" required />
+    <button (click)="validateLogin()">Entrar</button>
+    <a href="#">¿Olvidó su contraseña?</a>
+  </nav>
+</app-header>
+<main>
+  <h2>Bienvenido</h2>
+  <p>Estimados estudiantes, la Universidad Laica Eloy Alfaro de Manabí es una institución educativa de carácter
+    humanista, que busca formar profesionales competentes y emprendedores. Ofrecemos una educación integral con un
+    enfoque de calidad, orientada a satisfacer las necesidades del contexto regional y nacional.</p>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>MISIÓN</h3>
+      <p>Formar profesionales competentes y emprendedores a través de la articulación de las funciones sustantivas,
+        acreditando oferta académica de grado, postgrado, técnicas y tecnológicas.</p>
+    </div>
+    <div class="card">
+      <h3>VISIÓN</h3>
+      <p>Ser una Universidad acreditada nacional e internacionalmente, con calidad y pertinencia al contexto regional y
+        nacional.</p>
+    </div>
+    <div class="card">
+      <h3>¿QUIÉNES SOMOS?</h3>
+      <p>Somos una universidad de carácter humanista, con una clara concepción laica en materia educativa que procura la
+        más exigente libertad de enseñanza y cátedra.</p>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>

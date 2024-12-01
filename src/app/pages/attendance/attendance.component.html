@@ -1,0 +1,15 @@
+<app-header>
+    <h1>Registro de Asistencia</h1>
+  </app-header>
+  <main>
+    <button (click)="checkIn()">Check-In</button>
+    <button (click)="checkOut()">Check-Out</button>
+    <button (click)="markBreak()">Marcar Descanso</button>
+    <p id="status">{{ statusMessage }}</p>
+  
+    <button routerLink="/work-hours">Ver Horas Trabajadas</button>
+    <button routerLink="/help">Ayuda</button>
+    <button routerLink="/request-day-off">Solicitar Día Libre</button>
+  </main>
+  <app-footer></app-footer>
+  

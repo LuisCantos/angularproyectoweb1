@@ -1,0 +1,46 @@
+<app-header>
+    <h1>Horas Trabajadas</h1>
+  </app-header>
+  <main>
+    <h2>Registro de Horas Trabajadas (HTML)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Hora de Entrada</th>
+          <th>Hora de Salida</th>
+          <th>Total Horas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let workHour of workHours">
+          <td>{{ workHour.date }}</td>
+          <td>{{ workHour.entry }}</td>
+          <td>{{ workHour.exit }}</td>
+          <td>{{ workHour.total }} horas</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h2>Registro de Horas Trabajadas (XML)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Hora de Entrada</th>
+          <th>Hora de Salida</th>
+          <th>Total Horas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let xmlRecord of xmlWorkHours">
+          <td>{{ xmlRecord.date }}</td>
+          <td>{{ xmlRecord.entryTime }}</td>
+          <td>{{ xmlRecord.exitTime }}</td>
+          <td>{{ xmlRecord.totalHours }} horas</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <app-footer></app-footer>
+  

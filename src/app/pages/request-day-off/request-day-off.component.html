@@ -1,0 +1,14 @@
+<app-header>
+    <h1>Solicitud de Día Libre</h1>
+  </app-header>
+  <main>
+    <form (ngSubmit)="validateDayOff()">
+      <label for="dayOffDate">Selecciona la Fecha:</label>
+      <input type="date" id="dayOffDate" [(ngModel)]="dayOffDate" name="dayOffDate" required />
+      <label for="reason">Motivo:</label>
+      <textarea id="reason" [(ngModel)]="reason" name="reason" required></textarea>
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+  </main>
+  <app-footer></app-footer>
+  

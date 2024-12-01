@@ -1,0 +1,5 @@
+<footer>
+  <p>&copy; 2024 Universidad Laica Eloy Alfaro de Manabí</p>
+  <button *ngIf="!isLoginPage" (click)="goBack()">Regresar</button>
+  <button *ngIf="!isLoginPage" (click)="logout()">Cerrar Sesión</button>
+</footer>
